@@ -1,0 +1,96 @@
+.service{
+    padding: 140px 24px 164px 24px;
+    background-repeat: no-repeat;
+    background-image: url('../img/service-bg.svg'),url('../img/service-bg2.svg');
+    background-position: left top, right bottom;
+}
+.service_title{
+    font-weight: 700;
+font-size: 32px;
+text-align: center;
+color: #fff;
+padding-bottom: 48px;
+}
+.service_span{
+    color: #79c8c7;
+}
+.service_item{
+    align-items: center;
+    text-align: center;
+    &:not(:last-child){
+        padding-bottom: 48px;
+    }
+    padding-top: 36px;
+    background-repeat: no-repeat;
+    background-position: top center ;
+    background-image: url('../../img/service-item-bg.svg');
+}
+.service_item::after{
+    content: "";
+    width: 66px;
+    height: 66px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-image: url('../../img/service-job.svg');
+}
+.service_item-2::after{
+    content: "";
+    width: 66px;
+    height: 66px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-image: url('../../img/service-job2.svg');
+}
+.service_item-3::after{
+    content: "";
+    width: 66px;
+    height: 66px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-image: url('../../img/service-job3.svg');
+}
+.service_text{
+    font-weight: 600;
+font-size: 15px;
+line-height: 167%;
+text-align: center;
+color: #fff;
+padding-bottom: 16px;
+}
+.service_sub_title{
+    font-weight: 700;
+font-size: 18px;
+line-height: 156%;
+text-align: center;
+color: #79c8c7;
+padding-bottom: 2px;
+}
+.service_job{
+    font-style: italic;
+font-weight: 500;
+font-size: 13px;
+line-height: 138%;
+text-align: center;
+color: #fff;
+padding-bottom: 16px;
+}
+@media screen and (min-width: 768px) {
+    .service{
+        padding: 100px 97.5px;
+    }
+    .service_title{
+        font-size: 32px;
+    }
+}
+@media screen and (min-width: 1100px) {
+    .service{
+        padding: 140px 165px;
+    }
+    .service_title{
+        font-size: 48px
+    }
+    .service_list{
+        display: flex;
+        gap: 30px;
+    }
+}

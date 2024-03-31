@@ -1,0 +1,123 @@
+.manage{
+    padding: 64px 24px;
+    background-color: #012f34;
+    background-repeat: no-repeat;
+    background-image: url('../img/manage-bg.svg');
+    background-position: right top;
+}
+.manage_block{
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.manage_title{
+    max-width: 234px;
+    font-weight: 700;
+    font-size: 32px;
+    color: #fff;
+    padding-bottom: 56px;
+& ::before{
+    content: "";
+    width: 48px;
+height: 4px;
+display: block;
+background: #f67e7e;
+margin-bottom: 32px;
+}
+}
+.manage_list{
+    text-align: center;
+    
+}
+.manage_item{
+    &:not(:last-child){
+        padding-bottom: 48px;
+    }
+    text-align: center;
+}
+.manage_item::before{
+    content: "";
+    width: 72px;
+    height: 72px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    background-image: url(../img/manage-item.svg);
+    background-position: center;
+}
+.manage_item-2::before{
+    content: "";
+    width: 72px;
+    height: 72px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    background-image: url(../img/manage-item2.svg);
+    background-position: center;
+}
+.manage_item-3::before{
+    content: "";
+    width: 72px;
+    height: 72px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    background-image: url(../img/manage-item3.svg);
+    background-position: center;
+}
+.manage_item_title{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 156%;
+    color: #f67e7e;
+    padding-bottom: 8px;
+}
+.manage_item_text{
+    font-weight: 600;
+font-size: 15px;
+line-height: 167%;
+color: #CCD5D6;
+}
+@media screen and (min-width: 768px) {
+    .manage{
+        padding: 100px 97.5px;
+    }
+    .manage_title{
+        max-width: 445px;
+        font-size: 32px;
+        line-height: 100%;
+
+    }
+    .manage_list{
+        width: 573px;
+       
+    }
+    .manage_item{
+       display: flex;
+       gap: 23px;
+      text-align: start;
+    }
+    .manage_item_title{
+        padding-bottom: 16px;
+    }
+  
+}
+@media screen and (min-width: 1100px){
+    .manage{
+        padding: 169px 176px;
+     
+    }
+    .manage_block{
+    display: flex;
+    gap: 103px;
+   
+}
+.manage_title{
+    font-size: 48px;
+
+}
+    .manage_item{
+        width: 530px;
+    }
+   .manage_span{
+    max-width: 700px;
+   }
+}
+
